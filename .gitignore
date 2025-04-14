@@ -1,0 +1,54 @@
+# Build artifacts
+*.o
+*.out
+a.out
+*.exe
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Debug files and directories
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.yml
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Editor and IDE files
+.vscode/
+.idea/
+.metadata/
+*.swp
+*.swo
+*~
+
+# Lab output files
+result
+array
+average
+append
+copy
+pointer
+punish
+matrix
+mem
+main
+cyclic
+
+# Debug and profiling info
+Info.plist
+
+# Executable binaries (without extensions)
+# This is tricky as many of your files don't have extensions
+# You might need to explicitly commit some binaries if needed
+
+# PDF files - keep these if they're part of your assignment references
+# *.pdf
+
+# Specific directories that should be ignored completely
+# .metadata/

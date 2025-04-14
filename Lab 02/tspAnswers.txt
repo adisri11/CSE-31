@@ -1,0 +1,18 @@
+TPS 1:
+1. Guadalupe, Victor
+
+TPS 2:
+1. To compile to use lldb, you would use gcc -g -o program_name source_file.c
+2. To load it into lldb you type lldb ./punish into the terminal.
+3. To run you simply type run in the terminal.
+4. A breakpoint is a location in the code where you pause the execution of the code. You can set a breakpoint by typing in b and
+    then the line number or the function name.
+5. You can run the code line by line by typing n in the terminal.
+6. You can see the value of variables by typing in print and then the variable name.
+7. You can type in c to let the program finish.
+8. You type q or exit to exit lldb.
+
+TPS 3:
+1. 4 variables, 2 are pointers (px and py)
+2. The variables would have random values. This is because while the variable was created there is no value assigned to it. 
+8. The result makes sense because arr[0] is the beginning of arr, which would mean that they have the same address. 

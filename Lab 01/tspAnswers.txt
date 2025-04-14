@@ -1,0 +1,21 @@
+TSP1
+1. Partners Names: Aditi, Guadalupe, Victor, Sharvin
+
+TSP2
+1. On a MacBook you use the spotlight search and search up terminal. On VS Code you can right click on the file and click Open in Integrated Terminal.
+    a. Yes
+    b. You can open multiple terminals because you have several files and each file can have their own terminal.
+2. You can tell the contents of the current directory by typing in ls into the terminal. 
+3. You can go to the desktop directory by tping in cd to the terminal. 
+4. You type in mkdir (name of directory), in this case you would put mkdir CSE 31.
+
+TPS3
+3. gcc main.c
+4. When you compile the program, no errors should pop up.
+5. The -c says not to run the linker.
+6. The -g allows us to use the debugger.
+7. You type in gcc (name of your program.c) -o (name you want it to be)
+8. If you complie your code by typing gcc main.c, you create and out file, which is complied executable file.
+9. You type ./ and then you add the name of your file after. 
+
+

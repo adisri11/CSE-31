@@ -1,0 +1,20 @@
+TPS 1:
+1. MIPS Assembler and Runtime Simulator
+5. a) You go to file then you click open and then select your file.
+   b) You click on the icon that looks like tools.
+   c) You click the big green play button to run.
+   d) No.
+   e) Next to the play button there is a smaller looking play button with a 1 next to it, you use that instead.
+   f) You click the reset button and then run the program again.
+
+TPS 2:
+1. .data: define the program data
+   .word: declare a word in the static data segment 
+   .text: define the program instructions
+2. branched to finish if $t3 and $0 are equal
+3. jumps to fib
+4. You set a breakpoint by by going to execute and checking the box next to the line in the text segment
+5. You click the step through button (next to the run button).
+6. You can look at the panel on the right and go to the registers tab. You can then edit a value by double clicking on the values and typing in the value you want.
+7. It is stored at 0x00400008
+8. It issues a system call to exit the code. You use it by calling syscall and the next line you do li $v0 and then find the number for the system call you want to use.

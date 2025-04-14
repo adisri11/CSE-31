@@ -1,0 +1,17 @@
+TPS 1:
+1. I expect it to run 2.
+2. I still expect it to print 2.
+3. I was wrong.
+4. It prints 2, I am very lost.
+5. a. One array
+   b. yes
+   c. They are not printing the same thing.
+6. The value increases by 4 bytes, as each integer has a size of 4 bytes and every element of the array adds one integer.
+8. It increases by 1 because characters are of size 1 byte.
+10. C access memory by seeing if the next increment of the data type size is available.
+
+TPS 2:
+1. It is making a pointer to a pointer of size 20 bytes.
+2. To access the i'th value of an array pointed to but pointer arr you use the statement *(arr + i).
+4. We need to pass the size cause we use the size to allocate the right amount of space. Every array can vary in size 
+    that way.

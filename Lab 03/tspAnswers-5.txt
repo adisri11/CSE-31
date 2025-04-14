@@ -1,0 +1,25 @@
+TPS 1:
+1. Stack, heap, and static. Stack has local variables, heap has dynamically allocated vairables, and static has global
+    variables.
+2. a. 3
+   b. 2, ptr points to int while handle points to a pointer.
+   c. stack
+   d. heap
+3. num: 0x7ff7b7339458 
+   ptr: 0x7ff7b7339450 
+   handle: 0x7ff7b7339448
+
+TPS 2:
+1. A struct is created for Node, which initailizes a float, and int, and a pointer to another Node. In the main function,
+    the first line allocates space for a node structure assigned to head. The integer value for the head node is set to 5
+    and the float value is set to 3.14.
+2. head value: 0x7fc2c3705c80 
+   head address: 0x7ff7b41be440 
+   iValue address: 0x7fc2c3705c80 
+   fValue address: 0x7fc2c3705c84 
+   next address: 0x7fc2c3705c88
+3. A struct is stored in memory somewhat similar to an array. Any elements in the struct are stored one after another. The
+    only difference is the address of the struct is not the same as the first variable initialtized in the struct. The 
+    value of the struct is the same as the address of the first initialized variable.
+
+

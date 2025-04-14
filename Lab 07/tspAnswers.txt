@@ -1,0 +1,16 @@
+TPS 1:
+1. The difference between procedures, functions, and methods is a function is a block of code that performs a specific task and typically returns a value, while a procedure is similar but doesn't return a value, and a method is a function or procedure associated with an object or class in object-oriented programming.
+4. Line 20. It adds the values in register $a0 and $a1 and loads it into $v0.
+5. You cannot use j instead of jr $ra. j is an unconditional jump while jr returns the function and then continues execution.
+6. The return address is saved at line 11 to the $ra register. 
+7. The execution is terminated with errors.
+8. The address that should return is the is the address of the instruction following SUM, which is 0x00400020.
+9. The address is not correct.
+10. 0x00400028 is the new return address. The output is 15.
+11. We should use jal.
+
+TPS 2:
+1. I expect the output to be 28 and that is what it returns.
+3. SUM knows where to return to because we used jal, which jumps and links. When SUM calls SUB, the return address for MAIN is overwritten by the return address for SUM.
+4. You can just save it to stack.
+5. The original value of $s0, which is x, is overwritten to m, so when going back to MAIN and trying to add $s1 and $s0 to get x + y, you can't.

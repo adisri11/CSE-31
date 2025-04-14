@@ -1,0 +1,12 @@
+Assignment 1:
+1. Line 25 caused the segmentation fault.
+2. You need to reference the input variable. (put & in front of input)
+3. The value of sum inside the read_values function is not being retunred.
+4. Inside read_values, you make sum a pointer. Then in main when inputting sum into read_values you need to reference it.
+
+Assignment 2:
+1. Yes
+2. No, the bug is that the array s1 is not empty upon adding the new string "HI!". It overwrites the HELLO!, 
+    but does not overwrite the addition hello! that was appended earlier. You fix this by making everything 
+    after the appended two new strings null
+3. No, I think this happens because the string only takes in 10 characters.

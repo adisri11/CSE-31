@@ -1,0 +1,56 @@
+    float evensum = 0;
+    float oddsum = 0;
+    float evencount= 0;
+    float oddcount= 0;
+    int value = 1;
+    int num = 1;
+    int valuesum;
+
+    int calcsum(int n)
+        if(n != 0)
+            if(n < 0)
+                n *= -1;
+            
+            int temp = n;
+            valuesum = 0;
+            while(temp > 0)
+                valuesum += temp % 10;
+                temp /= 10;
+            
+
+            if (valuesum %2 == 0)
+                evensum += value;
+                evencount++;
+            
+            else
+                oddsum += value;
+                oddcount++;
+
+int main()
+
+    while(value != 0)
+        if(num % 10 == 1 && num != 11)
+            printf("Enter the %dst value: ",num);
+        else if(num % 10 == 2 && num != 12)
+            printf("Enter the %dnd value: ",num);
+        else if(num % 10 == 3 && num != 13)
+            printf("Enter the %drd value: ",num);
+        else 
+            printf("Enter the %dth value: ",num);
+        
+        scanf("%d", &value);
+        calcsum(value);
+        num++;
+    
+    
+
+
+    if(evencount > 0)
+        float evenavg = evensum / evencount;
+        printf("Average of inputs whose digits sum up to an even number: %.2f \n",evenavg);
+    
+
+    if(oddcount > 0)
+        float oddavg = oddsum / oddcount;
+        printf("Average of inputs whose digits sum up to an odd number: %.2f \n",oddavg);
+    
