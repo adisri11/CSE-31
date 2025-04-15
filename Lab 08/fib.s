@@ -1,11 +1,20 @@
         .data
 n:      .word 13
+prompt: .asciiz "Please enter a number: "
 
         .text
-main: 	add     $t0, $0, $zero
+main:   li $v0, 4
+        la $a0, prompt 
+        syscall
+        
+        li $v0, 5
+        syscall
+        move $t3, $v0  
+        
+	add     $t0, $0, $zero
 	addi    $t1, $zero, 1
-	la      $t3, n
-	lw      $t3, 0($t3)
+	#la      $t3, n
+	#lw      $t3, 0($t3)
 		
 fib: 	beq     $t3, $0, finish
 	add     $t2,$t1,$t0

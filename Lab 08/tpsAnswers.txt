@@ -1,0 +1,20 @@
+TPS 1:
+5. No we do not need the definition of n anymore. We also do not need to load value of n into $t3 anymore as we load the inputed value instead.
+
+TPS 2:
+1. The output will be:
+Returning 1
+Returning 3
+Returning 3
+Returning 1
+Returning 3
+Returning 3
+Returning 1
+Returning 3
+Returning 1
+Returning 3
+Returning 3
+Returning 1
+Returning 3
+29
+2. 
