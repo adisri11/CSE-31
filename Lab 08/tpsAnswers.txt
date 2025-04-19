@@ -17,4 +17,10 @@ Returning 3
 Returning 1
 Returning 3
 29
-2. 
+2. The main function right now creates space in a stack frame to sotre one value, then moves the value of $sp to $s1, 
+    then calls recursion. Upon returning it jumps to the end of the program.
+5. We expect it to be stored in $v0, so we can just move it to $t0, and then to $a0 so it can be printed. 
+7. Three integers can be stored.
+10. Because we call recursion twice, we need both values of $a0.
+12. the return value from the first call would be lost.
+15. We need to restore the return address $ra.
