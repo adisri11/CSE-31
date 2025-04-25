@@ -1,0 +1,9 @@
+TPS 1:
+4. Generally a machine instruction for MIPS has 32 bits.
+5. There are 3 types, register type, immediate type, and jump type. Add and sub are register types. Addi and lw are immediate types. j and jal are of jump type.
+6. a) addi is an immediate type. There are 4 fields, opcode, rs, rt, and immediate value. 
+   b) opcode is 0x08, the rs register is $zero with a hex of 0x00, the rt is in the $s0 register with a hex of 0x10. The value of the immediate 25 in hex is 0x19.
+   c) In binary the instruction is 001000 00000 10000 0000000000011001. In hex the instruction is 0x20100019.
+7. a) The machine code in hex is 0x0230402a. This in binary is 0000 0010 0011 0000 0100 0000 0010 1010. 
+   b) The instruction is a register type because the opcode is 0, which refers to a register type. 
+   c) 
