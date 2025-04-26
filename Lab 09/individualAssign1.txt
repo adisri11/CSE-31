@@ -1,0 +1,43 @@
+Line 7:
+Instruction: addi $s0, $zero, -15
+Instruction type: I-type
+Format: opcode (6) | rs (5) | rt (5) | immediate (16)
+opcode: 001000
+rt $zero: 00000
+rs $s0: 10000
+immediate -15: 1111 1111 1111 0001
+Machine code: 0010 0000 0001 0000 1111 1111 1111 0001
+Hex: 0x2010FFF1
+
+Line 14: 
+Instruction: slt $t0, $s0, $s1
+Type: R-type
+Format: opcode (6) | rs (5) | rt (5) | rd (5) | shamt (5) | funct (6)
+opcode: 000000
+rs $s0: 10000
+rt $s1: 10001
+rd $t0: 01000
+shamt: 00000
+funct slt: 101010
+Machine code: 0000 0010 0001 0001 0100 0000 0010 1010  
+Hex: 0x0211402A
+
+Line 17:
+Instruction: beq $t0, $zero, LESEQ
+Type: I-type
+Format: opcode (6) | rs (5) | rt (5) | immediate (16)
+opcode: 000100
+rs $t0: 01000
+rt $zero: 00000
+immediate: 0000 0000 0000 0110
+Machine code: 0001 0001 0000 0000 0000 0000 0000 0110  
+Hex: 0x11000006
+
+Line 20: 
+Instruction: j GRT
+Type: J-type
+Format: opcode (6) | address (26)
+opcode: 000010
+address: 00 0000 0001 0000 0000 0000 0111
+Machine code: 0000 1000 0000 0001 0000 0000 0000 0111
+Hex: 0x08010007

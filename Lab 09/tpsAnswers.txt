@@ -4,6 +4,26 @@ TPS 1:
 6. a) addi is an immediate type. There are 4 fields, opcode, rs, rt, and immediate value. 
    b) opcode is 0x08, the rs register is $zero with a hex of 0x00, the rt is in the $s0 register with a hex of 0x10. The value of the immediate 25 in hex is 0x19.
    c) In binary the instruction is 001000 00000 10000 0000000000011001. In hex the instruction is 0x20100019.
-7. a) The machine code in hex is 0x0230402a. This in binary is 0000 0010 0011 0000 0100 0000 0010 1010. 
-   b) The instruction is a register type because the opcode is 0, which refers to a register type. 
-   c) 
+7. a) The machine code in hex is 0x0230402a. This in binary is 000000 10001 10000 0100000000101010. 
+   b) The instruction is a register type because the opcode is 000000, which refers to a register type. There is 6 fields, opcode, rs, rt, rd, shamt, and funct. 
+   c) opcode: 0x0
+      rs: 0x11
+      rt: 0x10
+      rd: 0x8
+      shamt: 0x0
+      funct: 0x2A
+   d) It is slt. You can tell by the last 6 bits of the binary code as it specifies which instruction it is. The rs is $17 which is $s1, rt is $16 which is $s0, rd is $8 which is $t0. 
+   d) The last MIPS code is syscall, it is the same in the source.
+8. a) The format is bne $rs, $rt, label.
+   b) opcode = 0x5
+      rs = 0x8
+      rt = 0x0
+   c) The target label is LESS, which is at the address 0x0040001c. 
+   d) No, we don't put the address directly as the value of the immediate field of the instruction. Instead, the immediate field contains the offset to reach the target address.
+   e) You find the value by using this equation, Offset = (Target address - PC - 4) / 4. Solving this will give you a value of 1, or 0x1.
+   f) The machine code in binary is 000101 01000 00000 0000000000000001. In hex it is 0x15000001. This matched the code segment.
+9. a) This is a j-type or jump type instruction. There are 2 fields.
+   b) The opcode for j in hex is 0x2.
+   c) The label is GREQ, the hex value of this is 0x00400030
+   d) We can use 26 bits. The field stores the target address right shifted by 2 bits. Reasons for this approach: MIPS instructions must be word-aligned (4-byte boundaries), so the bottom 2 bits of any instruction address are always 00. This allows reaching a larger address range with fewer bits. It assumes jumps are typically within the same 256MB region of memory (same upper 4 bits). In binary it is 00010000 00000000 00001100. 
+   e) The machine code in binary is 00001000 01000000 00000000 01100, and in hex is 0x0810000c. This is the same as in the code in the text segment. 
