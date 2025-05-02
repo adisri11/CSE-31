@@ -39,6 +39,7 @@ matrix
 mem
 main
 cyclic
+finish
 
 # Debug and profiling info
 Info.plist

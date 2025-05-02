@@ -1,0 +1,9 @@
+TPS 1:
+1. Cache is the small memory located next to the CPU the stores frequently access data. IT is needed because it is much faster
+    than the original form of storing memory, which is the RAM.
+4. We need 4 bits. It is not practical to have a block size of 1 byte because it increases the number of cache misses and 
+    reduces spatial locality benefits.
+5. We need 6 bits. It is log base 2 of the number of blocks.
+6. Yes, you multiply the number of blocks and the block size.
+7. The leftover bits become the tag. This is important as it verifies if the data came from the right address.
+8. a)  
