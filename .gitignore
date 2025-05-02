@@ -40,6 +40,7 @@ mem
 main
 cyclic
 finish
+claude
 
 # Debug and profiling info
 Info.plist
