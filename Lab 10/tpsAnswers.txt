@@ -6,4 +6,20 @@ TPS 1:
 5. We need 6 bits. It is log base 2 of the number of blocks.
 6. Yes, you multiply the number of blocks and the block size.
 7. The leftover bits become the tag. This is important as it verifies if the data came from the right address.
-8. a)  
+8. a) 1 MB
+   b) 3 bits
+   c) 16
+   d) 4 bits
+   e) 3 bits 
+   g) 79 bits
+
+TPS 2:
+1. Direct-mapped cache can have conflict misses. This leads to constant eviction and reload.
+3. We need 8 bits. You find this by doing log base 2 of the number of blocks divided by the associativity.
+4. a) 1 MB
+   b) 3 bits
+   c) 16
+   d) 8
+   e) 3 bits
+   f) 14 bits
+   h) 80 bits

@@ -1,0 +1,16 @@
+1. 13th Gen Intel(R) Core(TM) i7-13700K
+2. There is L1, L2, and L3. L1 does have a separate cache for data and instructions.
+3. L1 data: 12 x 48 KB
+   L1 instructions: 12 x 32 KB
+   L2: 2 x 3 MB
+   L3: 30 MB
+4. The line size is 64 bytes.
+5. They are set associative. 
+   L1 data: 12-way set associative
+   L1 instruction: 8-way set associative
+   L2: 16-way set associative
+   L3: 12-way set associative
+6. Total blocks: 48 KB / 64 B = 768 blocks
+   Index bits: log₂(768) ≈ 9.58 → 10 bits
+   Offset bits: log₂(64) = 6 bits
+   Tag bits: 64 - 10 - 6 = 48 bits
