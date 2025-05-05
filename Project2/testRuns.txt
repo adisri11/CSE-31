@@ -1,0 +1,69 @@
+Test Run 1:
+Enter the number of assignments (between 1 and 25): 4
+Enter score: 37
+Enter score: 19
+Enter score: -45
+Enter score: 12
+Original scores: 37 19 -45 12 
+Sorted scores (in descending order): 37 19 12 6 -45
+Enter the number of (lowest) scores to drop: 3
+Average (rounded down) with dropped scores removed: 37
+-- program is finished running --
+
+Test Run 2:
+Enter the number of assignments (between 1 and 25): -3
+Enter the number of assignments (between 1 and 25): 2
+Enter score: 49
+Enter score: 3
+Original scores: 49 3
+Sorted scores (in descending order): 49 3
+Enter the number of (lowest) scores to drop: 2
+All scores dropped!
+-- program is finished running --
+
+Test Run 3:
+Enter the number of assignments (between 1 and 25): -15
+Enter the number of assignments (between 1 and 25): 0
+Enter the number of assignments (between 1 and 25): 7
+Enter score: 2
+Enter score: 45
+Enter score: 1
+Enter score: 903
+Enter score: 23
+Enter score: 17
+Enter score: 64
+Original scores: 2 45 1 903 23 17 64
+Sorted scores (in descending order): 903 64 45 23 17 2 1
+Enter the number of (lowest) scores to drop: 9
+Enter the number of (lowest) scores to drop: -3
+Enter the number of (lowest) scores to drop: 4
+Average (rounded down) with dropped scores removed: 337
+-- program is finished running --
+
+Test Run 4:
+Enter the number of assignments (between 1 and 25): -537
+Enter the number of assignments (between 1 and 25): 1
+Enter score: 7
+Original scores: 7
+Sorted scores (in descending order): 7
+Enter the number of (lowest) scores to drop: -5
+Enter the number of (lowest) scores to drop: 1
+All scores dropped!
+-- program is finished running --
+
+Test Run 5:
+Enter the number of assignments (between 1 and 25): 8
+Enter score: 89
+Enter score: 45
+Enter score: 2
+Enter score: 7
+Enter score: 6
+Enter score: 20
+Enter score: 19
+Enter score: 655
+Original scores: 89 45 2 7 6 20 19 655 
+Sorted scores (in descending order): 655 89 45 20 19 7 6 2
+Enter the number of (lowest) scores to drop: 5
+Average (rounded down) with dropped scores removed: 263
+-- program is finished running --
+

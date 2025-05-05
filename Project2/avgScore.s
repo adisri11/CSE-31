@@ -96,8 +96,6 @@ loop_in:
 	la $a0, str5
 	syscall
 	
-	la $a0, space
-	syscall
 	
 	li $v0, 1
 	la $a0, 0($a1)
